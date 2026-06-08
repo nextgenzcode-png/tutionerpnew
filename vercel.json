@@ -3,9 +3,6 @@
   "buildCommand": "npm --prefix tution/client run build",
   "outputDirectory": "tution/client/dist",
   "framework": "vite",
-  "env": {
-    "VITE_API_BASE": "@vite-api-base"
-  },
   "routes": [
     {
       "src": "/api/(.*)",
