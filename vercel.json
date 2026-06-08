@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "buildCommand": "npm --prefix tution/client run build",
+  "outputDirectory": "tution/client/dist",
+  "framework": "vite",
+  "env": {
+    "VITE_API_BASE": "@vite-api-base"
+  },
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "tution/server/server.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "tution/client/dist/index.html"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "tutionerpnew",
+  "version": "1.0.0",
+  "description": "Tuition ERP Management System",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm --prefix tution/server run dev\" \"npm --prefix tution/client run dev\"",
+    "build": "npm --prefix tution/client run build && npm --prefix tution/server --silent -v",
+    "start": "npm --prefix tution/server start",
+    "install-all": "npm install && npm --prefix tution/client install && npm --prefix tution/server install"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.0"
+  }
+}
